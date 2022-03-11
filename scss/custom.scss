@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300;0,400;0,500;1,300;1,500;1,700&family=Lato:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500;1,600&family=Outfit&display=swap");
+
+$font-family-base: "Open sans", sans-serif;
+$font-family-secundary: "Lato", sans-serif;
+
+$primary: #3676f7;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../css/prueba.css";
+
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 90px auto;
+
+  .card {
+    width: 330px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 30px;
+    text-align: center;
+    transition: all 0.25s;
+
+    .img-cuadros_canchas {
+      width: 250x;
+      height: 300px;
+    }
+    .img-cuadros_torneos {
+      height: 310px;
+      width: auto;
+    }
+    .img-cuadros_contacto {
+      height: 300px;
+      width: 310px;
+      margin-left: 10px;
+      border-radius: 8px;
+    }
+    .img-cuadros_productos {
+      height: 330px;
+      width: 290px;
+      margin-left: 20px;
+      border-radius: 8px;
+    }
+    h4 {
+      font-weight: 600;
+      margin-top: 25px;
+    }
+    p {
+      padding: 0 2rem;
+      font-size: 16px;
+      font-weight: 300;
+    }
+    a {
+      font-weight: 500;
+      text-decoration: none;
+      margin-bottom: 0pxpx;
+    }
+  }
+}
+.footer {
+  padding: 1rem;
+  background-color: white;
+  margin: 0px;
+
+  a {
+    color: #6c757d;
+
+    i {
+      font-size: 1rem;
+      margin-left: 1rem;
+      margin-right: 15px;
+    }
+  }
+}
+.footer-sm {
+  background-color: white;
+  color: #6c757d;
+}
+.footer-sm_icons {
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #6c757d;
+}
