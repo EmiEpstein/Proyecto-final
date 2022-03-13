@@ -81,3 +81,8 @@ $primary: #3676f7;
 .mapa-texto {
   background-color: $primary;
 }
+@media (max-width: 780px) {
+  .ul {
+    display: none;
+  }
+}
