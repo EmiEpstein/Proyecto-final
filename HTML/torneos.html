@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="icon" href="Imagenes/CENTERPADELlogo.png" />
-    <!--Font Google-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Outfit&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="icon" href="../Imagenes/CENTERPADELlogo.png" />
     <!--Font Awesome-->
     <script
       src="https://kit.fontawesome.com/f351b977e2.js"
       crossorigin="anonymous"
     ></script>
-    <title>Center Padel</title>
+    <!--Font Google-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <title>Torneos</title>
   </head>
   <body>
     <!--NavBar-->
@@ -24,10 +24,10 @@
       <div class="container">
         <img
           class="nav-logo"
-          src="Imagenes/CENTERPADELlogo.png"
+          src="../Imagenes/CENTERPADELlogo.png"
           alt="nav-logo"
         />
-        <a class="navbar-brand" href="index.html">Center Padel</a>
+        <a class="navbar-brand" href="../index.html">Center Padel</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,95 +42,154 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item1">
-              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="HTML/canchas.html">Nuestras Canchas</a>
+              <a class="nav-link" href="canchas.html">Nuestras Canchas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="HTML/torneos.html">Torneos</a>
+              <a class="nav-link" href="torneos.html">Torneos</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!--Header con imagen-->
 
-    <header>
-      <div class="crea">
-        <section class="py-5 text-center container">
-          <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-              <h1 class="fw-light">¡Crea tu juego!</h1>
+    <p class="texto-torneos">
+      Imagenes de los campeones de los torneos de Center Padel
+    </p>
 
-              <p>
-                <a
-                  href="https://api.whatsapp.com/send?phone=543854085159"
-                  class="btn btn-primary my-2"
-                  target="_blank"
-                  >Pedir Turno</a
-                >
-              </p>
-            </div>
+    <!--Carousel-->
+    <div>
+      <div
+        id="carouselExampleControls"
+        class="carousel-torneos slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../Imagenes/Campeones Center.GIF"
+              class="d-block w-100"
+              alt="canchas"
+            />
           </div>
-        </section>
-      </div>
-    </header>
-
-    <!--Tarjetas de inicio-->
-
-    <div class="contenedor">
-      <div class="card">
-        <img
-          class="img-cuadros_canchas"
-          src="Imagenes/Center Cancha.jpeg"
-          alt="Nuestras Canchas"
-        />
-        <h4>Nuestras Canchas</h4>
-        <p>
-          Conocé nuestras canchas y donde estan ubicadas para disfrutar del
-          mejor Padel
-        </p>
-        <a href="HTML/canchas.html">Click Aqui</a>
-      </div>
-
-      <div class="card">
-        <img
-          class="img-cuadros_torneos"
-          src="Imagenes/Partido final Center.GIF"
-          alt="Cuadro de torneos"
-        />
-        <h4>Torneos</h4>
-        <p>
-          Accede a la informacion de los torneos que se realizaron en Center
-          Padel
-        </p>
-        <a href="HTML/torneos.html">Click Aqui</a>
-      </div>
-
-      <div class="card">
-        <img
-          class="img-cuadros_contacto"
-          src="Imagenes/subcampeones center.GIF"
-          alt="cuadro de contacto"
-        />
-        <h4>Contactanos</h4>
-        <p>
-          Consulta por los turnos disponibles para venir a disfrutar con amigos
-          y familia
-        </p>
-        <a href="https://api.whatsapp.com/send?phone=543854085159"
-          >Click Aqui</a
+          <div class="carousel-item">
+            <img
+              src="../Imagenes/Partido final Center.GIF"
+              class="d-block w-100"
+              alt="canchas"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../Imagenes/subcampeones center.GIF"
+              class="d-block w-100"
+              alt="canchas"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
         >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
 
-    <!--footer y algo más-->
+    <div>
+      <table class="table mb-3">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Clasificacion a playoffs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Celis, Ismael</td>
+            <td>750pts</td>
+            <td>Clasificado</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Celis, Amhed</td>
+            <td>750pts</td>
+            <td>Clasificado</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Anglade, Juan</td>
+            <td>700pts</td>
+            <td>Clasificado</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Campos, Facundo</td>
+            <td>700pts</td>
+            <td>Clasificado</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Juarez Carrizo, Juan Ignacio</td>
+            <td>675pts</td>
+            <td>Clasificado</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Juarez Carrizo, Juan Pablo</td>
+            <td>675pts</td>
+            <td>Clasificado</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Carrizo, Matias</td>
+            <td>550pts</td>
+            <td>Clasificado</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Riachi, Mariano</td>
+            <td>550pts</td>
+            <td>Clasificado</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Rabello, Martin Emanuel</td>
+            <td>337pts</td>
+            <td>Clasificado</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Rabello, Franco Alejandro</td>
+            <td>324pts</td>
+            <td>Clasificado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--Footer-->
     <br />
     <div class="container">
-      <div>
+      <div class="">
         <footer
-          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-5 mt-3"
         >
           <div class="row container-fluid position-relative">
             <div
@@ -180,7 +239,7 @@
         </footer>
       </div>
     </div>
-
+    <!-- JavaScript Bundle with Popper -->
     <script src="JS/bootstrap.js"></script>
   </body>
 </html>

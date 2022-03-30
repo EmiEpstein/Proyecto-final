@@ -67,22 +67,3 @@ $primary: #3676f7;
   height: 500px;
   width: 500px;
 }
-.carousel {
-  background-position: center;
-  background-size: cover;
-  width: 800px;
-  height: 500px;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  margin-left: 28%;
-
-  margin-top: 40px;
-}
-.mapa-texto {
-  background-color: $primary;
-}
-@media (max-width: 780px) {
-  .ul {
-    display: none;
-  }
-}

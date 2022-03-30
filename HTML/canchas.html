@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="icon" href="Imagenes/CENTERPADELlogo.png" />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="icon" href="../Imagenes/CENTERPADELlogo.png" />
     <!--Font Google-->
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Outfit&display=swap"
@@ -16,7 +16,7 @@
       src="https://kit.fontawesome.com/f351b977e2.js"
       crossorigin="anonymous"
     ></script>
-    <title>Center Padel</title>
+    <title>Nuestras Canchas</title>
   </head>
   <body>
     <!--NavBar-->
@@ -24,7 +24,7 @@
       <div class="container">
         <img
           class="nav-logo"
-          src="Imagenes/CENTERPADELlogo.png"
+          src="/Imagenes/CENTERPADELlogo.png"
           alt="nav-logo"
         />
         <a class="navbar-brand" href="index.html">Center Padel</a>
@@ -42,89 +42,120 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item1">
-              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="HTML/canchas.html">Nuestras Canchas</a>
+              <a class="nav-link" href="canchas.html">Nuestras Canchas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="HTML/torneos.html">Torneos</a>
+              <a class="nav-link" href="torneos.html">Torneos</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!--Header con imagen-->
 
-    <header>
-      <div class="crea">
-        <section class="py-5 text-center container">
-          <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-              <h1 class="fw-light">¡Crea tu juego!</h1>
-
-              <p>
-                <a
-                  href="https://api.whatsapp.com/send?phone=543854085159"
-                  class="btn btn-primary my-2"
-                  target="_blank"
-                  >Pedir Turno</a
-                >
-              </p>
-            </div>
-          </div>
-        </section>
+    <!--Carousel-->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
-    </header>
-
-    <!--Tarjetas de inicio-->
-
-    <div class="contenedor">
-      <div class="card">
-        <img
-          class="img-cuadros_canchas"
-          src="Imagenes/Center Cancha.jpeg"
-          alt="Nuestras Canchas"
-        />
-        <h4>Nuestras Canchas</h4>
-        <p>
-          Conocé nuestras canchas y donde estan ubicadas para disfrutar del
-          mejor Padel
-        </p>
-        <a href="HTML/canchas.html">Click Aqui</a>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/Imagenes/Center Cancha Carousel 1.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/Imagenes/Center Cancha Carousel 2.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/Imagenes/Center Cancha Carousel 3.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
       </div>
-
-      <div class="card">
-        <img
-          class="img-cuadros_torneos"
-          src="Imagenes/Partido final Center.GIF"
-          alt="Cuadro de torneos"
-        />
-        <h4>Torneos</h4>
-        <p>
-          Accede a la informacion de los torneos que se realizaron en Center
-          Padel
-        </p>
-        <a href="HTML/torneos.html">Click Aqui</a>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br />
+    <br />
+    <!--Mapa-->
+    <div class="row mt-3 d-flex">
+      <div class="col-sm-12 col-md-5 align-items-center">
+        <iframe
+          class="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7061.081557156426!2d-64.2847045775238!3d-27.762306871686555!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b53acac5cade5%3A0xe8aa3822f010b260!2sClub%20De%20Abogados!5e0!3m2!1ses-419!2sar!4v1647081870733!5m2!1ses-419!2sar"
+          width="500"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </div>
-
-      <div class="card">
-        <img
-          class="img-cuadros_contacto"
-          src="Imagenes/subcampeones center.GIF"
-          alt="cuadro de contacto"
-        />
-        <h4>Contactanos</h4>
-        <p>
-          Consulta por los turnos disponibles para venir a disfrutar con amigos
-          y familia
-        </p>
-        <a href="https://api.whatsapp.com/send?phone=543854085159"
-          >Click Aqui</a
+      <div class="col-sm-12 col-md-6">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="150"
+          height="150"
+          fill="currentColor"
+          class="mapa-pin"
+          viewBox="0 0 16 16"
         >
+          <path
+            fill-rule="evenodd"
+            d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"
+          />
+        </svg>
       </div>
     </div>
-
     <!--footer y algo más-->
     <br />
     <div class="container">
