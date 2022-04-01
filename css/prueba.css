@@ -1,7 +1,4 @@
-html {
-  margin: 0px;
-  padding: 0px;
-}
+
 .nav {
   width: 100%;
 }
@@ -9,6 +6,9 @@ html {
   width: 50px;
   height: 50px;
   margin-right: 20px;
+}
+h2{
+  text-align: center;
 }
 
 .crea {
@@ -40,10 +40,12 @@ a:visited {
   margin-bottom: 50px;
   margin-top: 100px;
   background-color: #6a9bff;
+  align-content: center;
+
 }
 .mapa-pin {
-  margin-left: 200px;
-  margin-top: 200px;
+  margin-top: 120px;
+  padding: auto;
 }
 .container {
   width: 100%;
@@ -53,5 +55,67 @@ a:visited {
   font-size: 1.7rem;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #00d9ffe3;
 }
+
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
+  margin-bottom: 30px;
+  grid-auto-flow: 150px
+  ;
+}
+.gallery-item {
+  position: relative;
+}
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: auto;
+  min-height: 500px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}/*
+.carousel{
+  width: auto;
+  height: auto;
+}
+
+.gallery-title {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 1));
+  color: aliceblue;
+  width: 100%;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery-item:nth-child(1) {
+    grid-column-start: span 1;
+  }
+  .gallery-item:nth-child(2) {
+    grid-column-start: span 1;
+  }
+  .gallery-item:nth-child(3) {
+    grid-column-start: span 1;
+  }
+  .gallery-item:nth-child(4) {
+    grid-column-start: span 1;
+  }
+}
+
